@@ -42,8 +42,8 @@ CATEGORY_SAVE_AS = "category/{slug}/index.html"
 TAG_URL = "tag/{slug}/"
 TAG_SAVE_AS = "tag/{slug}/index.html"
 
-AUTHOR_URL = "author/{slug}/"
-AUTHOR_SAVE_AS = "author/{slug}/index.html"
+# I highly doubt there will be any authors other than me any time soon
+AUTHOR_SAVE_AS = ""
 
 # Plugins
 PLUGIN_PATHS = ['./plugins']
