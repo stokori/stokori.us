@@ -3,3 +3,4 @@
 .*.sw*
 .ropeproject/
 __pycache__/
+output/
