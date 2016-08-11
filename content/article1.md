@@ -7,7 +7,6 @@ Slug: hello-world
 
 [TOC]
 
-
 # Hello Friends #
 
 Lorem ipsum delorem sit amut blah blah blah blah blah yadda yadda and all that business

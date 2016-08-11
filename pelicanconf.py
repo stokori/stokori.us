@@ -34,10 +34,21 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
+# URL rewrites
+
+ARTICLE_URL = "posts/{category}/{slug}/"
+ARTICLE_SAVE_AS = "posts/{category}/{slug}/index.html"
+
+CATEGORY_URL = "category/{slug}"
+CATEGORY_SAVE_AS = "category/{slug}/index.html"
+
+TAG_URL = "tag/{slug}/"
+TAG_SAVE_AS = "tag/{slug}/index.html"
+
 # Plugins!
-PLUGIN_PATHS = ['./pelican-plugins']
-#PLUGINS = ['extract_toc','disqus_static','better_figures_and_images']
-#MD_EXTENSIONS = (['toc'])
+PLUGIN_PATHS = ['./plugins']
+PLUGINS = ['extract_toc','better_figures_and_images','summary','clean_summary','render_math']
+MD_EXTENSIONS = (['toc'])
 
 #Metadata
 # EXTRA_PATH_METADATA = {
