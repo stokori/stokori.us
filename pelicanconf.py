@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Kazi Toko'
-SITENAME = 'Stow it, Morte.'
+SITENAME = 'I\'ll Think of Something Witty Eventually'
 SITEURL = 'http://www.stokori.us'
 
 PATH = 'content'
@@ -20,9 +20,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'))
+LINKS = ()
 
 # Social widget
 SOCIAL = (('Twitter', 'http://twitter.com/stokori'),
@@ -35,7 +33,6 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 
 # URL rewrites
-
 ARTICLE_URL = "posts/{category}/{slug}/"
 ARTICLE_SAVE_AS = "posts/{category}/{slug}/index.html"
 
@@ -45,14 +42,25 @@ CATEGORY_SAVE_AS = "category/{slug}/index.html"
 TAG_URL = "tag/{slug}/"
 TAG_SAVE_AS = "tag/{slug}/index.html"
 
-# Plugins!
+AUTHOR_URL = "author/{slug}/"
+AUTHOR_SAVE_AS = "author/{slug}/index.html"
+
+# Plugins
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['extract_toc','better_figures_and_images','summary','clean_summary','render_math']
 MD_EXTENSIONS = (['toc'])
 
-#Metadata
-# EXTRA_PATH_METADATA = {
-    # 'extra/robots.txt': {'path': 'robots.txt'},
-    # 'extra/favicon.ico': {'path': 'favicon.ico'},
-    # 'extra/htaccess': {'path': '.htaccess'}
-# }
+# Theme
+THEME = 'theme/'
+
+#Static Paths and Metadata
+STATIC_PATHS = [
+    'images', 
+    'extra/robots.txt', 
+    'extra/favicon.ico'
+]
+
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'}
+}
