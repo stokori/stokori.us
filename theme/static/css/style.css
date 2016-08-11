@@ -1,2 +1,2 @@
-body{background-image:url("");color:#253031}a,a:visited,a:active{color:#3e7cb1;font-decoration:none}a:hover{color:#5eb1bf;font-decoration:underline}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600);body{background-image:url("");background-color:#78c0e0;color:#253031;font-family:"Open Sans",sans-serif}a,a:visited,a:active{color:#3e7cb1;font-decoration:none}a:hover{color:#5eb1bf;font-decoration:underline}#container{width:100%}#content{width:70%;margin-left:25%}#content #post-list{list-style:none}#content #post-list li{padding:10px;margin:5px;background-color:#cdedf6}#menu{width:20%;background-color:#cdedf6;float:left;padding:10px}#menu ul{list-style:none;padding:0px}
 /*# sourceMappingURL=style.css.map */
