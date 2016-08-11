@@ -1,15 +1,13 @@
-Title: How this blog was set up using Pelican
+Title: Hello World!
 Date: 2015-04-10 
-Category: Tech
-Subcategory: Blogging
-Tags: pelican, python
-Slug: pelican-setup
+Category: Me
+Subcategory: Okay
+Tags: hello, world
+Slug: hello-world
 
 [TOC]
 
-**Table of contents**
 
-[TOC]
+# Hello Friends #
 
-In this post it is documented how this blog was constructed using a static 
-site maker, meaning, there is no server-side processing of data.
+Lorem ipsum delorem sit amut blah blah blah blah blah yadda yadda and all that business
