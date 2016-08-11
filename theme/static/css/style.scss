@@ -33,14 +33,25 @@ a:hover {
     width: 70%;
     margin-left: 25%;
 
-    #post-list { 
+    ol#post-list {
+        margin: 0px;
+        padding: 0px;
         list-style: none;
         
         li {
             padding: 10px;
-            margin: 5px;
+            margin: 10px;
             background-color: $whiteish;
+            overflow: auto;
+            zoom: 1;
         }
+        
+    }
+    
+    .readmore {
+        float: right;
+        background-color: #FFFFFF;
+        padding: 10px;
     }
 }
 
@@ -49,10 +60,17 @@ a:hover {
     background-color: $whiteish;
     float: left;
     padding: 10px;
+    margin: 10px;
+    height: 100%;
     
     ul {
         list-style: none;
         padding: 0px;
     }
     
+}
+
+.clearfix {
+   overflow: auto;
+   zoom: 1;
 }
