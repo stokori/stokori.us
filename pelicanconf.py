@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Kazi Toko'
 SITENAME = 'Stow it, Morte.'
-SITEURL = 'http://stokori.us'
+SITEURL = 'http://www.stokori.us'
 
 PATH = 'content'
 
