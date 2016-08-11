@@ -1,4 +1,5 @@
 Title: Beep boop
+Date: 2016-08-11
 Category: Me
 Subcategory: Okay
 Tags: hello, world
