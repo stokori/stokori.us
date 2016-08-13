@@ -3,17 +3,20 @@
 $steelblue: #3e7cb1;
 $paleblue: #78c0e0;
 $blackish: #253031;
-$tealblue: #5eb1bf;
+$darkblue: #134074;
 $whiteish: #cdedf6;
 
 $body-font: "Open Sans", sans-serif;
 $heading-font: "Roboto Slab", sans-serif;
+$font-size: 14px;
 
 body {
     background-image: url("");
     background-color: $paleblue;
     color: $blackish;
     font-family: $body-font;
+    padding-top: 70px; 
+    font-size: 14px;
 }
 
 a, a:visited, a:active {
@@ -22,12 +25,17 @@ a, a:visited, a:active {
 }
 
 a:hover {
-    color: $tealblue;
+    color: $darkblue;
     font-decoration: underline;
 }
 
 h1, h2, h3 {
         font-family: $heading-font;
+}
+
+h1#header {
+    font-size: 2em;
+    margin: 10px;
 }
 
 #content {
@@ -42,6 +50,11 @@ h1, h2, h3 {
             overflow: auto;
             zoom: 1;
             margin-bottom: 10px;
+            border-radius: 4px;
+            
+            h2 {
+                margin-top: 5px;
+            }
         }
         
     }
@@ -50,20 +63,39 @@ h1, h2, h3 {
         float: right;
         background-color: #FFFFFF;
         padding: 10px;
+        border-radius: 4px;
+        color: $steelblue;
     }
+    
+    .readmore:hover {
+        background-color: $steelblue;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    
 }
 
-#menu {
+#sidebar {
     background-color: $whiteish;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
     
     ul {
         list-style: none;
         padding: 0px;
     }
     
+    h3 {
+
+    }
 }
 
-#sidebar li {
-  border: 0 #f2f2f2 solid;
-  border-bottom-width:1px;
+#footer {
+    
+    a:hover {
+        color: $whiteish;
+        text-decoration: none;
+    }
+    
 }
