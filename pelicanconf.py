@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+#Basic Settings
 AUTHOR = 'Kazi Toko'
 SITENAME = 'I\'ll Think of Something Witty Eventually'
 SITEURL = 'http://www.stokori.us'
@@ -32,7 +33,7 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-# URL rewrites
+# URL customization
 ARTICLE_URL = "posts/{category}/{slug}/"
 ARTICLE_SAVE_AS = "posts/{category}/{slug}/index.html"
 
@@ -50,8 +51,11 @@ PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['extract_toc','better_figures_and_images','summary','clean_summary','render_math']
 MD_EXTENSIONS = (['toc'])
 
-# Theme
+# Theme Configuration
 THEME = 'theme/'
+PROFILE_PICTURE = "profile.png"
+DISPLAY_PAGES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = True
 
 #Static Paths and Metadata
 STATIC_PATHS = [
