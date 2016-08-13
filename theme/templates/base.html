@@ -39,7 +39,7 @@
             <div class="row">
             
             <!--Sidebar-->
-            <div class="col-sm-4 col-md-3">
+            <div class="col-sm-4 col-md-3 col-sm-push-8 col-md-push-9">
             <div id="sidebar" role="navigation">
                 <ul class="list">
                     
@@ -64,10 +64,12 @@
             </div>
             </div>
 
-            <div class="col-sm-8 col-md-9">
+            <div class="col-sm-8 col-md-9 col-sm-pull-4 col-md-pull-3">
             <!--Content-->
+            <section id="content">
             {% block content %}
             {% endblock %}
+            </section>
             </div>
             
             </div>
