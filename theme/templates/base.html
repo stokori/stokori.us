@@ -2,8 +2,8 @@
 <html lang="{{ DEFAULT_LANG }}">
 <head>
         {% block head %}
-        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
         <meta charset="utf-8" />
+        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
         
         {% if FEED_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
@@ -24,38 +24,39 @@
         {% endblock head %}
 </head>
 
-<body id="index" class="home">
+<body>
 
-        <header id="banner" class="body">
-                <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
-        </header><!-- /#banner -->
+        <!--Header-->
+        <header>
+               <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+        </header>
         
-        <div id="container-fluid">
+        <div id="container">
             
-            <nav id="menu">
-                <ul>
-                {% for title, link in MENUITEMS %}
+            <!--Sidebar-->
+            <nav>
+                <ul class="nav">
+                   <strong>Sidebar</strong>
+                    
+                    {% for title, link in MENUITEMS %}
                     <li><a href="{{ link }}">{{ title }}</a></li>
-                {% endfor %}
-                
-                
-                {% for p in pages %}
-                    <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-                {% endfor %}
-                
-                <h3>Categories</h3>
-                {% for cat, null in categories %}
-                      <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-                {% endfor %}
-                
-                Okay something needs to go to here so hello there is something here
-                
+                    {% endfor %}
+                    
+                    {% for p in pages %}
+                    <li ><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                    {% endfor %}
+                    
+                    {% for cat, null in categories %}
+                    <li><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                    {% endfor %}
                 </ul>
-            </nav><!-- /#menu -->
+            </div>
         
+            <!--Content-->
             {% block content %}
             {% endblock %}
         
+        </div>
         </div>
         
         <footer class="container-fluid text-center">
