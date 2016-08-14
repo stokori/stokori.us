@@ -14,11 +14,6 @@
             {% endif %}
 
             <meta name="viewport" content="width=device-width, initial-scale=1">
-          
-            <!--Bootstrap-->
-            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
             <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css">
         
@@ -28,18 +23,47 @@
 <body>
 
         <!--Header-->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
+        <header>
+            <div class="jumbotron" id="banner">SOMETHING WILL DEFINITELY GO HERE LIKE A <br> PICTURE OR SOMETHING</div>
+        </header>
+        
+        <nav id="nav">
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
                 <div class="navbar-header">
-                    <h1 id="header"><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+                    <a class="navbar-brand" href="{{ SITEURL }}/">{{ SITENAME }}</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                  </button>
                 </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                  </ul>
+                    
+                </div>
+        </div>
         </nav>
         
-        <div class="container-fluid">
+  
+        <div class="container">
             <div class="row">
             
+            <div class="col-sm-8 col-md-9 col-sm-push-4 col-md-push-3">
+            <!--Content-->
+            <section id="content">
+            {% block content %}
+            {% endblock %}
+            </section>
+            </div>
+            
             <!--Sidebar-->
-            <div class="col-sm-4 col-md-3 col-sm-push-8 col-md-push-9">
+            <div class="col-sm-4 col-md-3 col-sm-pull-8 col-md-pull-9">
             <div id="sidebar" role="navigation">
                 <ul class="list">
                     
@@ -63,14 +87,6 @@
                 </ul>
             </div>
             </div>
-
-            <div class="col-sm-8 col-md-9 col-sm-pull-4 col-md-pull-3">
-            <!--Content-->
-            <section id="content">
-            {% block content %}
-            {% endblock %}
-            </section>
-            </div>
             
             </div>
         </div>
@@ -78,6 +94,22 @@
         
         <div id="footer" class="container-fluid text-center">
                 &#9400; 2016 stokori | <a href="http://github.com/stokori/stokori.us">source code</a> | powered by <a href="http://getpelican.com/">pelican</a>
-        </div><!-- /#footer -->
+        </div>
+        
+        
+        <!-- Scripts -->
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script>
+            $('#nav').affix({
+                  offset: {
+                    top: $('header').height()
+                  }
+            });
+        </script>
+        
 </body>
 </html>

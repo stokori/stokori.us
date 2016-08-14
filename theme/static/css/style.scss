@@ -15,10 +15,7 @@ body {
     background-color: $paleblue;
     color: $blackish;
     font-family: $body-font;
-    padding-top: 70px; 
     font-size: 14px;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 a, a:visited, a:active {
@@ -35,9 +32,19 @@ h1, h2, h3 {
         font-family: $heading-font;
 }
 
-h1#header {
-    font-size: 2em;
-    margin: 10px;
+header {
+    
+    h1 {
+        margin: 10px;
+        white-space: nowrap;
+        width: 100%;
+    }
+    
+
+}
+
+#banner {
+    margin-bottom: 0;
 }
 
 #content {
@@ -97,6 +104,13 @@ h1#header {
         border-radius: 4px;
         
     
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
 }
 
 #sidebar {
