@@ -14,9 +14,14 @@
             {% endif %}
 
             <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+            
+            <!--Bootstrap-->
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            
             <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css">
-        
+            
         {% endblock head %}
 </head>
 
@@ -41,9 +46,9 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                   <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Page 1</a></li>
-                    <li><a href="#">Page 2</a></li>
-                    <li><a href="#">Page 3</a></li>
+                    <li><a href="{{ SITEURL }}/pages/about">About</a></li>
+                    <li><a href="{{ SITEURL }}/pages/projects">Projects</a></li>
+                    <li><a href="{{ SITEURL }}/archives">Archives</a></li>
                   </ul>
                     
                 </div>
@@ -98,10 +103,6 @@
         
         
         <!-- Scripts -->
-        <!--Bootstrap-->
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
         <script>
             $('#nav').affix({

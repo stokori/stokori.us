@@ -86,24 +86,27 @@ header {
 }
 
 #page {
-        padding: 10px;
-        background-color: $whiteish;
-        overflow: auto;
-        zoom: 1;
-        margin-bottom: 10px;
-        border-radius: 4px;
-        
+    padding: 10px;
+    background-color: $whiteish;
+    overflow: auto;
+    zoom: 1;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    
 }
 
 #article {
-        padding: 10px;
-        background-color: $whiteish;
-        overflow: auto;
-        zoom: 1;
-        margin-bottom: 10px;
-        border-radius: 4px;
-        
+    padding: 10px;
+    background-color: $whiteish;
+    overflow: auto;
+    zoom: 1;
+    margin-bottom: 10px;
+    border-radius: 4px;
     
+    h1 {
+        font-size: 2em;
+    }
+
 }
 
 #nav.affix {
@@ -130,6 +133,8 @@ header {
 }
 
 #footer {
+    
+    margin-bottom: 10px;
     
     a:hover {
         color: $whiteish;
