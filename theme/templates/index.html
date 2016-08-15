@@ -5,7 +5,7 @@
 
 <ol id="post-list">
 {% for article in articles_page.object_list %}
-        <li><article class="entry clearfix">
+        <li><article class="entry clearfix" id="article">
         
                 <h1 class="title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
                 
