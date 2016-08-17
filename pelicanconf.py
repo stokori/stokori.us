@@ -53,7 +53,8 @@ MD_EXTENSIONS = (['toc'])
 
 # Theme Configuration
 THEME = 'theme/'
-PROFILE_PICTURE = "profile.png"
+PROFILE_PICTURE = "theme/images/profile.png"
+DESCRIPTION = "I'm Kazi and I like birds."
 DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = True
 

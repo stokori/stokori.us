@@ -30,6 +30,7 @@ a:hover {
 
 h1, h2, h3 {
         font-family: $heading-font;
+        margin-top: 10px;
 }
 
 header {
@@ -140,10 +141,10 @@ header {
     
     .navbar-custom {
         background-color: $whiteish;
-        border-color: $whiteish; 
+        border: none;
     }
     
-    .active a {
+    .navbar-nav a:hover {
         background-color: $darkblue;
         border-color: $darkblue;
         color: #FFFFFF;
@@ -167,8 +168,31 @@ header {
     }
     
     h3 {
-
+        
     }
+    
+    .links {
+        margin-bottom: 10px;
+    }
+    
+    a {
+        border-radius: 0;
+    }
+    
+    a:hover {
+        color: #FFFFFF;
+        background-color: $steelblue;
+        text-decoration: none;
+    }
+    
+    .profile-picture {
+        max-width: 100%;
+    }
+    
+    .description {
+        margin: 10px;
+    }
+    
 }
 
 #footer {

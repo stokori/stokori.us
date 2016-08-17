@@ -45,7 +45,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                   <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="{{ SITEURL }}">Home</a></li>
                     <li><a href="{{ SITEURL }}/pages/about">About</a></li>
                     <li><a href="{{ SITEURL }}/pages/projects">Projects</a></li>
                     <li><a href="{{ SITEURL }}/archives">Archives</a></li>
@@ -70,26 +70,23 @@
             <!--Sidebar-->
             <div class="col-sm-4 col-md-3 col-sm-pull-8 col-md-pull-9">
             <div id="sidebar" role="navigation">
-                <ul class="list">
-                    
-                    {% for title, link in MENUITEMS %}
-                    <li><a href="{{ link }}">{{ title }}</a></li>
-                    {% endfor %}
-                    
-                    {% for p in pages %}
-                    <li ><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-                    {% endfor %}
+            
+                <img src="{{ SITEURL}}/{{ PROFILE_PICTURE }}" class="profile-picture img-rounded" />
+                
+                <div class="description">{{ DESCRIPTION }}</div>
+            
+                <div class="links list list-group">
                     
                     <h3>Categories</h3>
                     {% for cat, null in categories %}
-                    <li><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                    <a class="list-group-item" href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
                     {% endfor %}
                     
                     <h3>Elsewhere</h3>
                     {% for title, url in SOCIAL %}
-                    <li><a href="{{ url }}">{{ title }}</a></li>
+                    <a class="list-group-item" href="{{ url }}">{{ title }}</a>
                     {% endfor %}
-                </ul>
+                </div>
             </div>
             </div>
             
