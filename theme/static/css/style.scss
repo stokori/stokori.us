@@ -1,10 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700';
 
 $steelblue: #A5421E;
-$paleblue: #6E8B98;
+$bgcolor: #6E8B98;
 $blackish: #253031;
 $darkblue: #A5421E;
 $whiteish: #FBF3DD;
+$brightaccent: #C25528;
 
 $body-font: "Open Sans", sans-serif;
 $heading-font: "Roboto Slab", sans-serif;
@@ -12,7 +13,7 @@ $font-size: 14px;
 
 body {
     background-image: url();
-    background-color: $paleblue;
+    background-color: $bgcolor;
     color: $blackish;
     font-family: $body-font;
     font-size: 14px;
@@ -123,10 +124,17 @@ header {
         h1 {
             font-size: 2em;
             border: none;
+            color: $bgcolor;
         }
     }
 
+    .post-info {
+        color: #8B7E72;
+    }
+
 }
+
+
 
 #nav.affix {
         position: fixed;
@@ -136,12 +144,12 @@ header {
     }
 
 #nav {
-    background-color: $whiteish;
     color: $darkblue;
     
     .navbar-custom {
         background-color: $whiteish;
-        border: none;
+        border-top: 1px solid $darkblue;
+        border-bottom: 1px solid $darkblue;
     }
     
     .navbar-nav a:hover {
@@ -153,7 +161,17 @@ header {
     a {
         background-color: $whiteish;
         border-color: $whiteish; 
+        color: $darkblue;
     }
+    
+    h1 a:hover {
+        color: $brightaccent;
+    }
+    
+    h3 {
+        color: $bgcolor;
+    }
+    
 }
 
 #sidebar {
@@ -168,7 +186,7 @@ header {
     }
     
     h3 {
-        
+        color: $bgcolor;
     }
     
     .links {
