@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 #Basic Settings
-AUTHOR = 'Kazi Toko'
+AUTHOR = 'Kazi Fodor'
 SITENAME = 'I\'ll Think of Something Witty Eventually'
 SITEURL = 'http://www.stokori.us'
 
@@ -39,6 +39,9 @@ ARTICLE_SAVE_AS = "posts/{category}/{slug}/index.html"
 
 CATEGORY_URL = "category/{slug}"
 CATEGORY_SAVE_AS = "category/{slug}/index.html"
+
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = '{slug}/index.html'
 
 TAG_URL = "tag/{slug}/"
 TAG_SAVE_AS = "tag/{slug}/index.html"
