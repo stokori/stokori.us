@@ -46,6 +46,8 @@ PAGE_SAVE_AS = '{slug}/index.html'
 TAG_URL = "tag/{slug}/"
 TAG_SAVE_AS = "tag/{slug}/index.html"
 
+ARCHIVES_SAVE_AS = 'archives.html'
+
 # I highly doubt there will be any authors other than me any time soon
 AUTHOR_SAVE_AS = ""
 
