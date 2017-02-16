@@ -1,6 +1,7 @@
 Title: Projects
 
-Tumblr Backuppr
+[Chronicles of Darkness (New World of Darkness) NPC Generator](https://stokori.github.io/nwodnpcgen/)
 
-Ludum Dare
+[Mapkov](https://github.com/stokori/mapkov)
 
+[Saussure](https://github.com/stokori/saussure)
