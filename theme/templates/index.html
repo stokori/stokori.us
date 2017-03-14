@@ -1,27 +1,46 @@
 {% extends "base.html" %}
+{% block isIndex %}active{% endblock %}
 {% block content %}
+<section id="index">
 {% block content_title %}
+<h2>Artwork</h2>
 {% endblock %}
 
-<ol id="post-list">
+<div id="art-nav">
+<ul class="nav nav-pills">
+    <li class="active"><a  href="{{ SITEURL }}/art">All</a></li>
+    {% for category, articles in categories %}
+        <li><a  href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
+    {% endfor %}
+</ul>
+</div>
+
+<div class="row">
+<ul class="art-list">
 {% for article in articles_page.object_list %}
-        <li><article class="entry clearfix" id="article">
+        {% if article.category == "comic" %}
+        <div class="col-sm-5"> <li><a href="{{ SITEURL }}{{ article.url }}" class="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
+        {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/small/{{ article.image }}"></a>
         
-                <h1 class="title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
-                
-                <div class="post-info">
-                    <time class="published" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
-                </div>
-                
-                <div class="post-content"> {{ article.summary }} </div><!-- /.entry-content -->
-                
-                <a href="{{ SITEURL }}/{{ article.url }}" title="Permalink to {{ article.title|striptags }}" class="readmore">Read more...</a>
-                
-        </article></li>
+        {% else %}
+        <div class="col-sm-5"><li><a href="{{ SITEURL }}/images/art/{{ article.image }}" class="allery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
+        {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/small/{{ article.image }}"></a>
+        
+        {% endif %}
+    
+     <div class="art-label"><h4>{{ article.title }}</h4> {{ article.locale_date }}, {{ article.medium }}</div>
+     </li></div>
 {% endfor %}
-</ol><!-- /#posts-list -->
+
+</ul>
+</div>
+
 
 {% if articles_page.has_other_pages() %}
     {% include 'pagination.html' %}
 {% endif %}
+</section><!-- /#content -->
+<script>
+      jQuery('a.gallery').colorbox({maxWidth: '70%'});
+    </script>
 {% endblock content %}

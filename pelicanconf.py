@@ -4,7 +4,8 @@ from __future__ import unicode_literals
 
 #Basic Settings
 AUTHOR = 'Kazi Fodor'
-SITENAME = 'I\'ll Think of Something Witty Eventually'
+SITENAME = 'Stokori'
+SITESUBTITLE = 'Multimedia Artist & Programmer'
 SITEURL = 'http://www.stokori.us'
 
 PATH = 'content'
@@ -23,6 +24,8 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 LINKS = ()
 
+DEFAULT_DATE_FORMAT = '%B %Y'
+
 # Social widget
 SOCIAL = (('Twitter', 'http://twitter.com/stokori'),
           ('Tumblr', 'http://stokori.tumblr.com'),
@@ -34,11 +37,11 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 
 # URL customization
-ARTICLE_URL = "posts/{category}/{slug}/"
-ARTICLE_SAVE_AS = "posts/{category}/{slug}/index.html"
+ARTICLE_URL = "{category}/{slug}/"
+ARTICLE_SAVE_AS = "{category}/{slug}/index.html"
 
-CATEGORY_URL = "category/{slug}"
-CATEGORY_SAVE_AS = "category/{slug}/index.html"
+CATEGORY_URL = "art/{slug}/"
+CATEGORY_SAVE_AS = "art/{slug}/index.html"
 
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
@@ -48,12 +51,19 @@ TAG_SAVE_AS = "tag/{slug}/index.html"
 
 ARCHIVES_SAVE_AS = 'archives/index.html'
 
+INDEX_SAVE_AS = 'art/index.html'
+INDEX_URL = "art/"
+
+TEMPLATE_PAGES = {
+    '../theme/templates/home.html': 'index.html',
+}
+
 # I highly doubt there will be any authors other than me any time soon
 AUTHOR_SAVE_AS = ""
 
 # Plugins
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['extract_toc','better_figures_and_images','summary','clean_summary','render_math']
+PLUGINS = ['extract_toc','better_figures_and_images','summary','clean_summary','render_math','thumbnailer','subcategory']
 MD_EXTENSIONS = (['toc'])
 
 # Theme Configuration
@@ -62,6 +72,17 @@ PROFILE_PICTURE = "theme/images/profile.png"
 DESCRIPTION = "I'm Kazi and I like birds."
 DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = True
+
+# Disqus
+DISQUS_SITENAME = "stokorius"
+
+#Thumbnailer
+IMAGE_PATH = 'images'
+THUMBNAIL_DIR = 'thumbs'
+THUMBNAIL_KEEP_NAME = True
+THUMBNAIL_SIZES = {
+    'small': '?x200'
+}
 
 #Static Paths and Metadata
 STATIC_PATHS = [
@@ -74,3 +95,7 @@ EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'}
 }
+
+MENUITEMS = [
+    ('Artwork', '/art/')
+]

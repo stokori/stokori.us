@@ -1,4 +1,44 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
+{% block content %}
+<section id="index">
 {% block content_title %}
-<h2>Articles in the {{ category }} category</h2>
+<h2>Artwork</h2>
 {% endblock %}
+
+<div id="art-nav">
+<ul class="nav nav-pills">
+    <li><a  href="{{ SITEURL }}/art">All</a></li>
+    {% for categoryitem, articles in categories %}
+        <li {% if categoryitem == category %} class="active"{% endif %}><a  href="{{ SITEURL }}/{{ categoryitem.url }}">{{ categoryitem }}</a></li>
+    {% endfor %}
+</ul>
+</div>
+
+<div class="row">
+<ul class="art-list">
+{% for article in articles_page.object_list %}
+        {% if article.category == "comic" %}
+        <div class="col-sm-5"> <li><a href="{{ SITEURL }}{{ article.url }}" class="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
+        {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/small/{{ article.image }}"></a>
+        
+        {% else %}
+        <div class="col-sm-5"><li><a href="{{ SITEURL }}/images/art/{{ article.image }}" class="allery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
+        {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/small/{{ article.image }}"></a>
+        
+        {% endif %}
+    
+     <div class="art-label"><h4>{{ article.title }}</h4> {{ article.locale_date }}, {{ article.medium }}</div>
+     </li></div>
+{% endfor %}
+
+</ul>
+</div>
+
+{% if articles_page.has_other_pages() %}
+    {% include 'pagination.html' %}
+{% endif %}
+</section><!-- /#content -->
+<script>
+      jQuery('a.gallery').colorbox({maxWidth: '70%'});
+    </script>
+{% endblock content %}
