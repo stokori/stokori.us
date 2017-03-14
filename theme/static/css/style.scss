@@ -11,12 +11,16 @@ $body-font: "Open Sans", sans-serif;
 $heading-font: "Roboto Slab", sans-serif;
 $font-size: 14px;
 
+html,body {
+    overflow-x: hidden; }
+
 body {
     background-image: url();
     background-color: $bgcolor;
     color: $blackish;
     font-family: $body-font;
     font-size: 14px;
+    padding: 0px;
 }
 
 a, a:visited, a:active {
@@ -230,6 +234,24 @@ header {
     list-style: none;
     margin: 0px;
     padding: 0px;
+    
+    li {
+        margin-right: 2%;
+        margin-left: 1%;
+    }
+    
+
+    
+}
+
+.art-sizer {
+    width: 25%;
+}
+
+.artwork {
+    width: 20%;
+    float: left;
+    
 }
 
 .art-label h4 {

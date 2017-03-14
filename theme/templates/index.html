@@ -14,16 +14,16 @@
 </ul>
 </div>
 
-<div class="row">
 <ul class="art-list">
+<div class="art-sizer"></div>
 {% for article in articles_page.object_list %}
         {% if article.category == "comic" %}
-        <div class="col-sm-2"> <li><a href="{{ SITEURL }}{{ article.url }}" class="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
-        {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/small/{{ article.image }}"></a>
+        <div class="artwork"> <li><a href="{{ SITEURL }}{{ article.url }}" class="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
+        {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/vertical/{{ article.image }}"></a>
         
         {% else %}
-        <div class="col-sm-2"><li><a href="{{ SITEURL }}/images/art/{{ article.image }}" class="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
-        {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/small/{{ article.image }}"></a>
+        <div class="artwork"><li><a href="{{ SITEURL }}/images/art/{{ article.image }}" class="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
+        {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/vertical/{{ article.image }}"></a>
         
         {% endif %}
     
@@ -40,6 +40,16 @@
 {% endif %}
 </section><!-- /#content -->
 <script>
+jQuery(window).on('load', function(){ var $ = jQuery;
       jQuery('a.gallery').colorbox({maxWidth: '70%'});
+      var container = document.querySelector('.art-list');
+        var msnry = new Masonry( container, {
+          itemSelector: '.artwork',
+          columnWidth: '.art-sizer',
+          gutter: 10,
+          percentPosition: true
+        });
+        
+        });
     </script>
 {% endblock content %}

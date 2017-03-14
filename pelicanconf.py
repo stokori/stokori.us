@@ -81,7 +81,9 @@ IMAGE_PATH = 'images'
 THUMBNAIL_DIR = 'thumbs'
 THUMBNAIL_KEEP_NAME = True
 THUMBNAIL_SIZES = {
-    'small': '?x200'
+    'vertical': '200x?',
+    'horizontal': '?x200',
+    'square': '200x200'
 }
 
 #Static Paths and Metadata
