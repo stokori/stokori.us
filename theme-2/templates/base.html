@@ -1,0 +1,51 @@
+{% extends "_base.html" %}
+{% block everything %}
+<section id="content" class="container-fluid">
+        <header id="banner">
+                <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+                <strong>{{ SITESUBTITLE }}</strong>
+        </header>
+        
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+              <li class="{% block isHome %}{{ ISHOME }}{% endblock %}"><a href="{{ SITEURL}}">Home</a></li>
+            {% if DISPLAY_PAGES_ON_MENU %}
+              {% for p in pages %}
+                <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+              {% endfor %}
+            {% else %}
+              {% if DISPLAY_CATEGORIES_ON_MENU %}
+                {% for cat, null in categories %}
+                  <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                {% endfor %}
+              {% endif %}
+            {% endif %}
+            <li class="{% block isIndex %}{{ ISINDEX }}{% endblock %}"><a href="{{ SITEURL}}/art/">Artwork</a></li>
+            <!--{% for title, link in MENUITEMS %}
+                <li><a href="{{ SITEURL}}{{ link }}">{{ title }}</a></li>
+            {% endfor %}-->
+              </ul>
+            </div>
+          </div>
+        </nav>
+        
+        
+        {% block content %}
+        {% endblock %}
+        
+</section>
+
+<footer id="contentinfo" class="container-fluid text-center">        
+    Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+</footer>
+
+{% endblock %}

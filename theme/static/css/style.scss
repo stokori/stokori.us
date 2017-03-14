@@ -223,3 +223,24 @@ header {
     }
     
 }
+
+.art-list{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.art-label h4 {
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: .2em;
+    margin-top: .2em;
+}
+
+#art-nav {
+    margin-bottom: 1em;
+}
+    
+@media screen and (max-width: 767px) {
+  .row.content {height: auto;} 
+}

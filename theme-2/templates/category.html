@@ -8,9 +8,9 @@
 
 <div id="art-nav">
 <ul class="nav nav-pills">
-    <li class="active"><a  href="{{ SITEURL }}/art">All</a></li>
-    {% for category, articles in categories %}
-        <li><a  href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
+    <li><a  href="{{ SITEURL }}/art">All</a></li>
+    {% for categoryitem, articles in categories %}
+        <li {% if categoryitem == category %} class="active"{% endif %}><a  href="{{ SITEURL }}/{{ categoryitem.url }}">{{ categoryitem }}</a></li>
     {% endfor %}
 </ul>
 </div>
@@ -34,7 +34,6 @@
 
 </ul>
 </div>
-
 
 {% if articles_page.has_other_pages() %}
     {% include 'pagination.html' %}
