@@ -10,11 +10,11 @@
    {% if loop.index <= 5 %} 
    
         {% if article.category == "comic" %}
-           <div class="col-sm-5"> <li><a href="{{ SITEURL }}{{ article.url }}" class="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
+           <div class="col-sm-2"> <li><a href="{{ SITEURL }}{{ article.url }}" class="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
          {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/small/{{ article.image }}"></a>
         
         {% else %}
-         <div class="col-sm-5"><li><a href="{{ SITEURL }}/images/art/{{ article.image }}" class="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
+         <div class="col-sm-2"><li><a href="{{ SITEURL }}/images/art/{{ article.image }}" class="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
          {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/small/{{ article.image }}"></a>
         
         {% endif %}
