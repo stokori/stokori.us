@@ -82,7 +82,7 @@ THUMBNAIL_DIR = 'thumbs'
 THUMBNAIL_KEEP_NAME = True
 THUMBNAIL_SIZES = {
     'vertical': '200x?',
-    'horizontal': '?x200',
+    'horizontal': '?x300',
     'square': '200x200'
 }
 
