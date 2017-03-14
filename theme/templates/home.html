@@ -25,6 +25,31 @@
    {% endif %}
  {% endfor %}
 </ul>
+</div>
+
+<div class="row">
+    <div class="col-sm-4"><h3>Recent Commits</h3></div>
+    
+    <div class="col-sm-4"><h3>Recent Articles</h3>
+        {% set recent = articles if not all_articles else all_articles %}
+        <ul id="recent-posts">
+        {% for a in recent %}
+        {% if a.category == "blog" %}
+          {% if loop.index <= 6 %}
+            <li>
+              <a href="{{ SITEURL }}/{{ a.url }}">{{ a.title }}</a>
+            </li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="col-sm-4"><h3>Upcoming Events</h3>
+        St. Cloud Art Crawl - Friday, June 9, 2017
+    </div>
+</div>
+
 <script>
       jQuery('a.gallery').colorbox({maxWidth: '70%'});
     </script>
