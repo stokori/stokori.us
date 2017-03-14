@@ -4,27 +4,27 @@
 <section id="home">
 {% block content_title %}{% endblock content_title %}
 
+<div class="art-list-home">
 <div class="row">
 <ul class="art-list">
  {% for article in articles if 'featured' in article.tags %}
-   {% if loop.index <= 4 %} 
+   {% if loop.index <= 5 %} 
    
         {% if article.category == "comic" %}
-           <div class="artwork-home col-sm-3"> <li><a href="{{ SITEURL }}{{ article.url }}" class="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
+           <div class="artwork-home col-sm-2"> <li><a href="{{ SITEURL }}{{ article.url }}" class="gallery" rel="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
          {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/square/{{ article.image }}"></a>
         
         {% else %}
-         <div class="artwork-home col-sm-3"><li><a href="{{ SITEURL }}/images/art/{{ article.image }}" class="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
+         <div class="artwork-home col-sm-2"><li><a href="{{ SITEURL }}/images/art/{{ article.image }}" class="gallery" rel="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
          {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/square/{{ article.image }}"></a>
         
         {% endif %}
-    
-     <div class="art-label"><h4>{{ article.title }}</h4> {{ article.locale_date }}, {{ article.medium }}</div>
      </li></div>
      
    {% endif %}
  {% endfor %}
 </ul>
+</div>
 </div>
 <hr>
 <div class="row">
@@ -45,13 +45,15 @@
     </div>
     
     <div class="col-sm-6"><h3>Upcoming Events</h3>
-        St. Cloud Art Crawl - Friday, June 9, 2017
+        <a href="http://www.artcrawlstcloud.com/">St. Cloud Art Crawl</a> - June 9, 2017
+        <br>
+        <a href="http://2017.northernspark.org/">Northern Spark</a> - Jun 10, 2017
     </div>
 </div>
 
 <script>
 jQuery(window).on('load', function(){ var $ = jQuery;
-      jQuery('a.gallery').colorbox({maxWidth: '70%'});
+      jQuery('.gallery').colorbox({maxWidth: '70%', rel:'gallery'});
         
         });
     </script>
