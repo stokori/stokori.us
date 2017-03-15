@@ -13,4 +13,4 @@ Images: airmail0.png
          airmail5.png
          airmail6.png
          
-Final project for Computer Studio. 
+Final project for Computer Studio. My goal was to build a world and tell a story with only a few pages and no dialogue -- I love surreal art and comics, so that definitely played into my choices when creating the piece.
