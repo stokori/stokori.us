@@ -8,8 +8,10 @@
 <div id="art-nav">
 <ul class="nav nav-pills">
     <li class="active"><a  href="{{ SITEURL }}/art">All</a></li>
-    {% for category, articles in categories %}
-        <li><a  href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
+    {% for category, articles in categories %}        
+        {% if category != "blog" %}
+            <li><a  href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
+        {% endif %}
     {% endfor %}
 </ul>
 </div>
@@ -17,6 +19,7 @@
 <ul class="art-list">
 <div class="art-sizer"></div>
 {% for article in articles_page.object_list %}
+{% if article.category != "blog" %}
         {% if article.category == "comic" %}
         <div class="artwork"> <li><a href="{{ SITEURL }}/{{ article.url }}" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
         {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/vertical/{{ article.image }}">
@@ -29,6 +32,7 @@
     
      <div class="art-label"><h4>{{ article.title }}</h4></a> {{ article.locale_date }}. {{ article.medium }}.</div>
      </li></div>
+     {% endif %}
 {% endfor %}
 
 </ul>
