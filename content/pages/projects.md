@@ -1,7 +1,11 @@
 Title: Projects
 
-[Chronicles of Darkness (New World of Darkness) NPC Generator](https://stokori.github.io/nwodnpcgen/)
+I work on a lot of half-finished interactive projects when I can. Here's some of the notable ones.
 
-[Mapkov](https://github.com/stokori/mapkov)
+### [New World of Darkness NPC Generator](https://stokori.github.io/nwodnpcgen/) ###
+I run a lot of tabletop games, notably World of Darkness, and made this (entirely too ornate) thing in JQuery to help me generate NPCs on the fly.
 
-[Saussure](https://github.com/stokori/saussure)
+### [Mapkov](https://github.com/stokori/mapkov) ###
+An experiment in NPL (natural language processing). It builds a markov frequency table from a block of text, then uses the table to create a field of colored tiles based on the patterns in the text.
+
+### [Saussure](https://github.com/stokori/saussure) ###
