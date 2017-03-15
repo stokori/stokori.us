@@ -12,11 +12,11 @@
    
         {% if article.category == "comic" %}
            <div class="artwork-home col-sm-2"> <li><a href="{{ SITEURL }}/{{ article.url }}" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
-         {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/square/{{ article.image }}">
+         {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/square/{{ article.image }}"></a>
         
         {% else %}
          <div class="artwork-home col-sm-2"><li><a href="{{ SITEURL }}/images/art/{{ article.image }}" class="gallery" rel="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
-         {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/square/{{ article.image }}">
+         {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/square/{{ article.image }}"></a>
         
         {% endif %}
      </li></div>
