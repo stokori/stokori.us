@@ -1,2 +1,3 @@
 Title: Shop
-COMING SOON TO A THEATRE NEAR YOU
+
+My online storefront is temporarily offline. For now, please come check out my events to buy my stuff!
