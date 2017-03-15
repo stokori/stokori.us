@@ -18,12 +18,12 @@
 <div class="art-sizer"></div>
 {% for article in articles_page.object_list %}
         {% if article.category == "comic" %}
-        <div class="artwork"> <li><a href="{{ SITEURL }}{{ article.url }}" class="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
-        {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/vertical/{{ article.image }}"></a>
+        <div class="artwork"> <li><a href="{{ SITEURL }}/{{ article.url }}" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
+        {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/vertical/{{ article.image }}">
         
         {% else %}
         <div class="artwork"><li><a href="{{ SITEURL }}/images/art/{{ article.image }}" class="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
-        {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/vertical/{{ article.image }}"></a>
+        {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/vertical/{{ article.image }}">
         
         {% endif %}
     
@@ -40,7 +40,7 @@
 </section><!-- /#content -->
 <script>
 jQuery(window).on('load', function(){ var $ = jQuery;
-      jQuery('a.gallery').colorbox({maxWidth: '70%'});
+      jQuery('a.gallery').colorbox({maxWidth: '80%'});
       var container = document.querySelector('.art-list');
         var msnry = new Masonry( container, {
           itemSelector: '.artwork',

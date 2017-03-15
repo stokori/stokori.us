@@ -32,7 +32,31 @@
 
   </footer><!-- /.post-info -->
   <div class="post-content">
+    <p>{{ article.locale_date }}, {{ article.medium }}</p>
+    
     {{ article.content }}
+    
+    <div class="post-gallery">
+        <ul class="art-list">
+        <div class="art-sizer"></div>
+        {% for image in article.images %}
+        
+                <div class="artwork"><li><a href="{{ SITEURL }}/images/art/{{ image }}" class="gallery" rel="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
+                {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/vertical/{{ image }}"></a>
+                
+             </li></div>
+        {% endfor %}
+
+        </ul>
+        </div>
+        </div>
+
   </div><!-- /.entry-content -->
+  <script>
+    jQuery(window).on('load', function(){ var $ = jQuery;
+          jQuery('a.gallery').colorbox({maxHeight: '80%', rel: 'gallery'});
+            
+            });
+        </script>
 <article class="entry clearfix" id="article">
 {% endblock %}

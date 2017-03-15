@@ -11,12 +11,12 @@
    {% if loop.index <= 5 %} 
    
         {% if article.category == "comic" %}
-           <div class="artwork-home col-sm-2"> <li><a href="{{ SITEURL }}{{ article.url }}" class="gallery" rel="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
-         {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/square/{{ article.image }}"></a>
+           <div class="artwork-home col-sm-2"> <li><a href="{{ SITEURL }}/{{ article.url }}" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
+         {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/square/{{ article.image }}">
         
         {% else %}
          <div class="artwork-home col-sm-2"><li><a href="{{ SITEURL }}/images/art/{{ article.image }}" class="gallery" rel="gallery" title="<i>{{ article.title }}</i>, {{ article.locale_date }},
-         {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/square/{{ article.image }}"></a>
+         {{ article.medium }}"><img src="{{ SITEURL }}/thumbs/square/{{ article.image }}">
         
         {% endif %}
      </li></div>
@@ -53,7 +53,7 @@
 
 <script>
 jQuery(window).on('load', function(){ var $ = jQuery;
-      jQuery('.gallery').colorbox({maxWidth: '70%', rel:'gallery'});
+      jQuery('.gallery').colorbox({maxHeight: '80%', rel:'gallery'});
         
         });
     </script>
