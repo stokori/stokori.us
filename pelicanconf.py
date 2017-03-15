@@ -31,7 +31,7 @@ SOCIAL = (('Twitter', 'http://twitter.com/stokori'),
           ('Tumblr', 'http://stokori.tumblr.com'),
           ('GitHub', 'http://github.com/stokori'))
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 30
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
