@@ -34,7 +34,7 @@ SOCIAL = (('Twitter', 'http://twitter.com/stokori'),
 DEFAULT_PAGINATION = 30
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+# RELATIVE_URLS = True
 
 # URL customization
 ARTICLE_URL = "{category}/{slug}/"
