@@ -8,4 +8,5 @@ I run a lot of tabletop games, notably World of Darkness, and made this (entirel
 ### [Mapkov](https://github.com/stokori/mapkov) ###
 An experiment in NPL (natural language processing). It builds a markov frequency table from a block of text, then uses the table to create a field of colored tiles based on the patterns in the text.
 
-### [Saussure](https://github.com/stokori/saussure) ###
+### [Deconstruction](https://stokori.github.io/deconstruction/) ###
+An interactive art piece created for Combined Media. The goal was to explore the concept of site-specificity in an online and real world context.
