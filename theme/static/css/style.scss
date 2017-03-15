@@ -57,7 +57,29 @@ header {
     background-position: 50% 30%;
     padding-left: 5%;
     color: $whiteish;
+    
+    h1 {
+
+        margin-top: -1%;
+    }
+    
+    a {
+        color: $whiteish;
+    }
+    
+    a:hover {
+        color: $bgcolor;
+    }
+    
 }
+
+#banner::after {
+      display: block;
+      position: relative;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0, #fff 100%);
+      width: 100%;
+      content: '';
+    }
 
 #content {
 

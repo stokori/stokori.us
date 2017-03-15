@@ -1,4 +1,4 @@
-Title: The Second Dream
+Title: the second dream
 Date: 2015-12-29 
 Category: Illustration
 Template: comic
