@@ -42,11 +42,14 @@
         </div>
 
   </div><!-- /.entry-content -->
+        </article>
+{% endblock %}
+
+{% block scripts %}
   <script>
     jQuery(window).on('load', function(){ var $ = jQuery;
           jQuery('a.gallery').colorbox({maxHeight: '80%', rel: 'gallery'});
             
             });
         </script>
-        </article>
 {% endblock %}

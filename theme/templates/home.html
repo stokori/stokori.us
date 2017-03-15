@@ -51,12 +51,14 @@
     </div>
 </div>
 
+</section><!-- /#content -->
+{% endblock content %}
+
+{% block scripts %}
 <script>
 jQuery(window).on('load', function(){ var $ = jQuery;
       jQuery('.gallery').colorbox({maxHeight: '80%', rel:'gallery'});
         
         });
     </script>
-
-</section><!-- /#content -->
-{% endblock content %}
+    {% endblock %}

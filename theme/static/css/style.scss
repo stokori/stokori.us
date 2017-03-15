@@ -49,6 +49,19 @@ header {
 
 }
 
+
+    img.float-right {
+        margin: 1%;
+        float: right;
+    }
+    
+    img.float-left {
+        margin: 1%;
+        float: left;
+    }
+    
+
+
 #banner {
     margin-bottom: 0;
     background-image: url("../images/cover.png");

@@ -54,10 +54,14 @@
   {% include 'disqus.html' %}
 
   </div><!-- /.entry-content -->
-  <script>
+  </article>
+{% endblock %}
+
+{% block scripts %}
+<script>
     jQuery(window).on('load', function(){ var $ = jQuery;
           jQuery('a.gallery').colorbox({maxHeight: '80%', rel: 'gallery'});
             
             });
-        </script></article>
+        </script>
 {% endblock %}
