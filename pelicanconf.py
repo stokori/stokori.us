@@ -64,7 +64,14 @@ AUTHOR_SAVE_AS = ""
 # Plugins
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['extract_toc','better_figures_and_images','summary','clean_summary','render_math','thumbnailer','subcategory']
-MD_EXTENSIONS = (['toc'])
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+}
 
 # Theme Configuration
 THEME = 'theme/'
