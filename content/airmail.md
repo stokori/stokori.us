@@ -13,4 +13,4 @@ Images: airmail0.png
          airmail5.png
          airmail6.png
          
-Final project for Computer Studio. My goal was to showcase my constructed world, Luxma, and tell a story with only a few pages and no dialogue. I also love surrealism and had it on the brain while creating these pages, and it definitely shows.
+Final project for Computer Studio. My goal was to showcase my constructed world, Luxma, and tell a story with only a few pages and no dialogue. It's also a bit of a love letter to colorful surrealism.
