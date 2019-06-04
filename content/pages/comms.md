@@ -3,7 +3,7 @@ Slug: commissions
 
 ###Digital Painting
 
-Standard pricing for a single full body digital painting of a character is $70. Portraits/bust shots run for around $40. Prices extrapolate from there based on the complexity of the design, detail of the background, and the number of characters. I accepted both visual and written descriptions for characters, and specialize in drawing complex scenes that let me take full advantage of color, light, and shadow.
+Standard pricing for a single full body digital painting of a character is $70. Portraits/bust shots run for around $40. Prices extrapolate from there based on the complexity of the design, detail of the background, and the number of characters. I accept both visual and written descriptions for characters, and specialize in drawing complex scenes that let me take full advantage of color, light, and shadow.
 
 ###Website Creation & Consulting
 
