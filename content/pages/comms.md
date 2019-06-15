@@ -3,13 +3,17 @@ Slug: commissions
 
 ###Digital Painting
 
-Standard pricing for a single full body digital painting of a character is $70. Portraits/bust shots run for around $40. Prices extrapolate from there based on the complexity of the design, detail of the background, and the number of characters. I accept both visual and written descriptions for characters, and specialize in drawing complex scenes that let me take full advantage of color, light, and shadow.
+Standard pricing for a single full body digital painting of a character is $70. Portraits/bust shots run for around $40. Icons are $20. Prices extrapolate from there based on the complexity of the design, detail of the background, and the number of characters. 
+
+I accept both visual and written descriptions for characters, and specialize in drawing complex scenes that let me take full advantage of color, light, and shadow.
 
 ###Website Creation & Consulting
 
-I also offer website commissions. I love making websites for other artists! I also offer consulting if you'd like a second opinion on your work. Please contact me for my rates.
+I also offer website commissions. I love making websites for other artists, especially if you're just getting started! I also provide hosting for your website with no contract at rates cheaper than most big-name hosts, including support in the case something ever breaks.
 
-Send me a message either on here, on twitter (@stokori), or via email (kazi@stokori.us) for a specific quote on any of the above! I look forward to doing business with you!
+If you'd just like advice on how to improve your existing website, I also offer consulting. Please contact me for my rates.
+
+Send me a message either on twitter (@stokori), or via email (kazi@stokori.us) for a specific quote on any of the above! I look forward to doing business with you!
 
 ###Terms of Service
 
