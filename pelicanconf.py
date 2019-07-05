@@ -63,7 +63,7 @@ AUTHOR_SAVE_AS = ""
 
 # Plugins
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['extract_toc','summary','clean_summary','thumbnailer','subcategory']
+PLUGINS = ['extract_toc','summary','clean_summary','thumbnailer','subcategory','assets']
 MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.codehilite': {'css_class': 'highlight'},
