@@ -1,98 +1,33 @@
-			  //Configure below to change URL path to the snow image
-			  var snowsrc="https://i.imgur.com/31ydD5P.png"
-			  // Configure below to change number of snow to render
-			  var no = 10;
+// Fall v2.1 By MaxxBlade - http://www.maxxblade.co.uk/fall
 
-			  var ns4up = (document.layers) ? 1 : 0;  // browser sniffer
-			  var ie4up = (document.all) ? 1 : 0;
-			  var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
+var fallObjects=new Array();function newObject(url,height,width){fallObjects[fallObjects.length]=new Array(url,height,width);}
 
-			  var dx, xp, yp;    // coordinate and position variables
-			  var am, stx, sty;  // amplitude and step variables
-			  var i, doc_width = 800, doc_height = 600;
-			  
-			  if (ns4up||ns6up) {
-				doc_width = self.innerWidth;
-				doc_height = self.innerHeight;
-			  } else if (ie4up) {
-				doc_width = document.body.clientWidth;
-				doc_height = document.body.clientHeight;
-			  }
+///////////// EDIT THIS SECTION //////////////
+var numObjs=20, waft=50, fallSpeed=15, wind=0;
+newObject("https://i.imgur.com/31ydD5P.png",28,25);
+newObject("https://i.imgur.com/31ydD5P.png",28,25);
+newObject("https://i.imgur.com/31ydD5P.png",28,25);
+newObject("https://i.imgur.com/31ydD5P.png",21,21);
+newObject("https://i.imgur.com/31ydD5P.png",21,21);
+//////////////////////////////////////////////
 
-			  dx = new Array();
-			  xp = new Array();
-			  yp = new Array();
-			  am = new Array();
-			  stx = new Array();
-			  sty = new Array();
-			  
-			  for (i = 0; i < no; ++ i) {  
-				dx[i] = 0;                        // set coordinate variables
-				xp[i] = Math.random()*(doc_width-50);  // set position variables
-				yp[i] = Math.random()*doc_height;
-				am[i] = Math.random()*20;         // set amplitude variables
-				stx[i] = 0.02 + Math.random()/10; // set step variables
-				sty[i] = 0.7 + Math.random();     // set step variables
-				if (ns4up) {                      // set layers
-				  if (i == 0) {
-					document.write("<layer name="dot"+ i +"" left="15" top="15" visibility="show"><a href="http://dynamicdrive.com/"><img src='"+snowsrc+"' border="0"></a></layer>");
-				  } else {
-					document.write("<layer name="dot"+ i +"" left="15" top="15" visibility="show"><img src='"+snowsrc+"' border="0"></layer>");
-				  }
-				} else if (ie4up||ns6up) {
-				  if (i == 0) {
-					document.write("<div id="dot"+ i +"" style="POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;"><a href="http://dynamicdrive.com"><img src='"+snowsrc+"' border="0"></a></div>");
-				  } else {
-					document.write("<div id="dot"+ i +"" style="POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;"><img src='"+snowsrc+"' border="0"></div>");
-				  }
-				}
-			  }
-			  
-			  function snowNS() {  // Netscape main animation function
-				for (i = 0; i < no; ++ i) {  // iterate for every dot
-				  yp[i] += sty[i];
-				  if (yp[i] > doc_height-50) {
-					xp[i] = Math.random()*(doc_width-am[i]-30);
-					yp[i] = 0;
-					stx[i] = 0.02 + Math.random()/10;
-					sty[i] = 0.7 + Math.random();
-					doc_width = self.innerWidth;
-					doc_height = self.innerHeight;
-				  }
-				  dx[i] += stx[i];
-				  document.layers["dot"+i].top = yp[i];
-				  document.layers["dot"+i].left = xp[i] + am[i]*Math.sin(dx[i]);
-				}
-				setTimeout("snowNS()", 10);
-			  }
+function winSize(){winWidth=(moz)?window.innerWidth:document.body.clientWidth;winHeight=(moz)?window.innerHeight:document.body.clientHeight;}
+function winOfy(){winOffset=(moz)?window.pageYOffset:document.body.scrollTop;}
+function fallObject(num,vari,nu){
+	objects[num]=new Array(parseInt(Math.random()*(winWidth-waft)),-30,(parseInt(Math.random()*waft))*((Math.random()>0.5)?1:-1),0.02+Math.random()/20,0,1+parseInt(Math.random()*fallSpeed),vari,fallObjects[vari][1],fallObjects[vari][2]);
+	if(nu==1){document.write('<img id="fO'+i+'" style="position:absolute;" src="'+fallObjects[vari][0]+'">'); }
+}
+function fall(){
+	for(i=0;i<numObjs;i++){
+		var fallingObject=document.getElementById('fO'+i);
+		if((objects[i][1]>(winHeight-(objects[i][5]+objects[i][7])))||(objects[i][0]>(winWidth-(objects[i][2]+objects[i][8])))){fallObject(i,objects[i][6],0);}
+		objects[i][0]+=wind;objects[i][1]+=objects[i][5];objects[i][4]+=objects[i][3];
+		with(fallingObject.style){ top=objects[i][1]+winOffset+"px";left=objects[i][0]+(objects[i][2]*Math.cos(objects[i][4]))+"px";}
+	}
+	setTimeout("fall()",31);
+}
+var objects=new Array(),winOffset=0,winHeight,winWidth,togvis,moz=(document.getElementById&&!document.all)?1:0;winSize();
+for (i=0;i<numObjs;i++){fallObject(i,parseInt(Math.random()*fallObjects.length),1);}
+window.onscroll=winOfy;window.onresize=winSize;fall();
 
-			  function snowIE_NS6() {  // IE and NS6 main animation function
-				for (i = 0; i < no; ++ i) {  // iterate for every dot
-				  yp[i] += sty[i];
-				  if (yp[i] > doc_height-50) {
-					xp[i] = Math.random()*(doc_width-am[i]-30);
-					yp[i] = 0;
-					stx[i] = 0.02 + Math.random()/10;
-					sty[i] = 0.7 + Math.random();
-					doc_width = ns6up?window.innerWidth : document.body.clientWidth;
-					doc_height = ns6up?window.innerHeight : document.body.clientHeight;
-				  }
-				  dx[i] += stx[i];
-				  if (ie4up){
-				  document.all["dot"+i].style.pixelTop = yp[i];
-				  document.all["dot"+i].style.pixelLeft = xp[i] + am[i]*Math.sin(dx[i]);
-				  }
-				  else if (ns6up){
-				  document.getElementById("dot"+i).style.top=yp[i];
-				  document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i]);
-				  }   
-				}
-				setTimeout("snowIE_NS6()", 10);
-			  }
-
-			  if (ns4up) {
-				snowNS();
-			  } else if (ie4up||ns6up) {
-				snowIE_NS6();
-			  }
 
