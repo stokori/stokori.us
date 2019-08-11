@@ -47,9 +47,13 @@ Send me a message either on twitter (@stokori), or via email (kazi@stokori.us) f
  * In the event that I can not complete an in-stream commission live, you will be allowed the typical two revisions at each stage like a normal commission.
  * Minor changes may be made to the final rendered product, but I reserve the right to charge additional for anything more than small tweaks.
  
+ <hr>
+ 
  * I charge shipping for sketchbooks. 
  * I typically send them via USPS Media Mail (though I am willing to work with whatever you prefer), so the exact shipping may vary based on the weight (how many sketchbooks you buy). 
  * You can find a chart [here](https://pe.usps.com/text/dmm300/Notice123.htm#_c059). Tracking numbers are provided.
+ 
+ <hr>
  
  * I will happily draw most things for you! Humans, anthropomorphic animals, robots – you name it. Gore, blood, artistic nudity, and other non-sexual NSFW will likely be accepted.
  * Other NSFW commissions will be accepted on a case-by-case basis and will not be posted publicly.
