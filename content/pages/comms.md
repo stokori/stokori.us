@@ -1,19 +1,18 @@
 Title: Commissions & ToS
 Slug: commissions
 
-<div align="center">
-**Jump to:**
+<strong>Jump to:</strong>
 <a href="#artSection">Digital Paintings</a> - <a href="#bookSection">Sketchbooks</a> - <a href="#websiteSection">Websites</a> - <a href="#tos">ToS</a>
 </div>
 
 <div id="artSection">
-###Digital Painting
+## Digital Painting ##
 </div>
 
-* Standard pricing for a single full body digital painting of a character is $70. 
-* Portraits/bust shots start at $50. 
-* Icons are $20 flat.
-* In-stream commissions are always discounted: Icons are $15 flat, Busts start $40, and fullbodies start at 60$.
+* **A single full body digital painting of a character** starts at $70. 
+* **Portraits/bust shots** start at $50. 
+* **Icons** are $20 flat.
+* **In-stream commissions** are always **discounted:** Icons are $15 flat, Busts start $40, and fullbodies start at 60$.
 
 Prices extrapolate from there based on the complexity of the design, detail of the background, and the number of characters. (With the exception of icons, which are always the same price).
 
@@ -22,7 +21,7 @@ I accept both visual and written descriptions for characters, and specialize in 
 Please see [here](http://www.stokori.us/art/) for examples of my work!
 
 <div id="bookSection">
-##Sketchbooks
+## Sketchbooks ##
 </div>
 
 If you commission a either a fullbody character or large landscape painting for me, you can also **buy a handmade sketchbook with the art on it!** 
@@ -35,7 +34,7 @@ They are 1/2 letter paper sized, archival quality, and perfect bound with high q
 Depending on the price of the paper you would like, they are 
 
 <div id="websiteSection">
-###Website Creation & Consulting
+## Website Creation & Consulting ##
 </div>
 
 I also offer website commissions. I love making websites for other artists, especially if you're just getting started! I also provide hosting for your website with no contract at rates cheaper than most big-name hosts, including support in the case something ever breaks.
