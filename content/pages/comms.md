@@ -1,13 +1,42 @@
 Title: Commissions & ToS
 Slug: commissions
 
-###Digital Painting
+<div align="center">
+**Jump to:**
+<a href="#artSection">Digital Paintings</a> - <a href="#bookSection">Sketchbooks</a> - <a href="#websiteSection">Websites</a> - <a href="#tos">ToS</a>
+</div>
 
-Standard pricing for a single full body digital painting of a character is $70. Portraits/bust shots run for around $40. Icons are $20. Prices extrapolate from there based on the complexity of the design, detail of the background, and the number of characters. 
+<div id="artSection">
+###Digital Painting
+</div>
+
+* Standard pricing for a single full body digital painting of a character is $70. 
+* Portraits/bust shots start at $50. 
+* Icons are $20 flat.
+* In-stream commissions are always discounted: Icons are $15 flat, Busts start $40, and fullbodies start at 60$.
+
+Prices extrapolate from there based on the complexity of the design, detail of the background, and the number of characters. (With the exception of icons, which are always the same price).
 
 I accept both visual and written descriptions for characters, and specialize in drawing complex scenes that let me take full advantage of color, light, and shadow.
 
+Please see [here](http://www.stokori.us/art/) for examples of my work!
+
+<div id="bookSection">
+##Sketchbooks
+</div>
+
+If you commission a either a fullbody character or large landscape painting for me, you can also **buy a handmade sketchbook with the art on it!** 
+
+<div align="center">
+<img src="/thumbs/horizontal/sketchbooks.jpg">
+Here's an example of what they look like! Here's a [video of them](https://twitter.com/stokori/status/927316541577859078) in action.</div>
+
+They are 1/2 letter paper sized, archival quality, and perfect bound with high quality book glue. I usually use 110 lb heavyweight cardstock (works well for ink & light wet media like markers), but I am capable of making them with whatever paper you would prefer!
+Depending on the price of the paper you would like, they are 
+
+<div id="websiteSection">
 ###Website Creation & Consulting
+</div>
 
 I also offer website commissions. I love making websites for other artists, especially if you're just getting started! I also provide hosting for your website with no contract at rates cheaper than most big-name hosts, including support in the case something ever breaks.
 
@@ -15,7 +44,9 @@ If you'd just like advice on how to improve your existing website, I also offer 
 
 Send me a message either on twitter (@stokori), or via email (kazi@stokori.us) for a specific quote on any of the above! I look forward to doing business with you!
 
+<div id="tos">
 ###Terms of Service
+</div>
 
  * I reserve the right to deny a commission for any reason whatsoever.
  * I will send an update for the initial sketch, final sketch, and colored stages. You are allowed two revisions at each stage before you accrue additional charges.
