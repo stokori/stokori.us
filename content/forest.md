@@ -4,7 +4,7 @@ Category: Comic
 Template: comic
 Image: forest1.png
 Medium: Digital
-Images: forst1.png
+Images: forest1.png
          forest2.png
          forest3.png
   
