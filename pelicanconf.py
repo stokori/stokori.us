@@ -95,7 +95,7 @@ THUMBNAIL_SIZES = {
 
 #Static Paths and Metadata
 STATIC_PATHS = [
-    'images', 
+    'images',
     'extra/robots.txt', 
     'extra/favicon.ico'
 ]
